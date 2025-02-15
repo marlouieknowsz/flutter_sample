@@ -10,6 +10,17 @@ class Homescreen extends StatefulWidget {
 
 class _HomescreenState extends State<Homescreen> {
   @override
+
+  String displayedText = textValue1;
+
+  void updateText() {
+    setState(() {
+      someFunction1();
+      displayedText = textValue1;
+    });
+
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -32,7 +43,7 @@ class _HomescreenState extends State<Homescreen> {
 
           ElevatedButton(
               onPressed: () {
-                someFunction1();
+                updateText();
               },
               child: Text('press here')),
 
