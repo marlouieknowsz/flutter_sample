@@ -25,9 +25,16 @@ class Homescreen extends StatelessWidget {
             width: 100,
             height: 40,
             decoration: BoxDecoration(
-              color: Colors.red,
-              borderRadius: BorderRadius.all(Radius.circular(12)),
-            ),
+                color: Colors.red,
+                borderRadius: BorderRadius.all(Radius.circular(12)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0, 3),
+                    spreadRadius: 6,
+                    blurRadius: 6,
+                    offset: Offset(1, 1),
+                  )
+                ]),
           )
         ],
       ),
