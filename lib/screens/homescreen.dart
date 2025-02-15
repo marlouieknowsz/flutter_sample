@@ -19,7 +19,7 @@ class Homescreen extends StatelessWidget {
       body: Column(
         children: [
           Center(
-            child: Text('Hello World'),
+            child: Text('sample'),
           ),
           Container(
             width: 100,
@@ -29,10 +29,10 @@ class Homescreen extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(12)),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0, 3),
-                    spreadRadius: 6,
-                    blurRadius: 6,
-                    offset: Offset(1, 1),
+                    color: Colors.grey.withOpacity(0.3),
+                    spreadRadius: 5,
+                    blurRadius: 10,
+                    offset: Offset(0, 0),
                   )
                 ]),
           )
